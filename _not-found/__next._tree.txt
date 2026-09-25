@@ -1,2 +1,2 @@
-:HL["/solargrid-os/_next/static/chunks/04c7ixy2h7omx.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"316IkPl9Jm9eQQS2Q0rQC"}
+:HL["/solargrid-os/_next/static/chunks/09j0z_e29hx64.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"foWp2iclngGn4G4R88hZq"}
