@@ -51,3 +51,51 @@ export interface SolarPlantTelemetry {
   co2AvoidedTonsToday: number;
   totalRevenueTodayIDR: number;
 }
+
+// SPRINT 3: PLN PPA BILLING & CARBON REC TYPES
+export interface PpaBillingCycle {
+  billingNumber: string;
+  billingPeriodMonthYear: string;
+  grossExportMwh: number;
+  stationAuxiliaryLossMwh: number;
+  netBilledMwh: number;
+  ppaTariffPerKwhIDR: number;
+  grossEnergyChargeIDR: number;
+  ppn11PercentIDR: number;
+  totalPayableIDR: number;
+  availabilityFactorPercent: number;
+  contractComplianceStatus: "FULL_COMPLIANCE" | "PERFORMANCE_BONUS" | "PENALTY_APPLIED";
+  plnOfftakerEntity: string;
+  plnSubstationName: string;
+  invoiceDueDate: string;
+}
+
+export interface RenewableEnergyCertificate {
+  certificateSerialNo: string;
+  vintageYear: number;
+  projectRegistryId: string;
+  totalMwhIssued: number;
+  totalTonsCO2Offset: number;
+  registryAuthority: string;
+  issuanceDate: string;
+  verifiedStandard: "I-REC Standard" | "SPE-GRK Kementerian LHK";
+}
+
+// SPRINT 4: 25-YEAR PV DEGRADATION & LCOE TYPES
+export interface DegradationPoint {
+  operationalYear: number;
+  expectedEfficiencyPercent: number;
+  warrantyGuaranteedPercent: number;
+  annualGenerationGwh: number;
+  cumulativeLossPercent: number;
+}
+
+export interface LcoeFinancialMetrics {
+  capitalExpenditureIDR: number;
+  annualOpexPerYearIDR: number;
+  discountRatePercent: number;
+  levelizedCostIDRPerKwh: number;
+  projectIrrPercent: number;
+  paybackPeriodYears: number;
+  soilingLossPercent: number;
+}
